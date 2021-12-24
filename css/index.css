@@ -5,7 +5,31 @@
     padding: 0px;
     overflow-x:hidden;
   }
+  /* @media (max-width:360px){
+
+    #navBar{
+      width: fit-content;
+      padding: 0px !important;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 2px;
+
+    }
+    #navBar h2{
+      width: fit-content;
+      height: fit-content;
+      margin-bottom: 10px !important;
+    }
+    .navBarItem{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  } */
+
 /* Styling Navigation Bar*/
+
+  
 
 #navBar{
   padding: 30px;
@@ -16,9 +40,6 @@
 }
 .navBarItem{
   margin-left: auto;
-
-
-
 }
 #navBar a{
   text-decoration: none;
@@ -82,15 +103,17 @@ landingPage::before {
 
 
 Education {
-  margin-top: -1.5vh;
+  margin-top: -1.3rem;
   height: 80vh;
-  min-width: 100vw;
+  min-width: 100%;
+  width: 100vw;
   display: flex ;
   flex-direction: column;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
   background: #f4623a;
+  flex-wrap: wrap;
 }
 
 Education h2 {
@@ -101,13 +124,14 @@ Education h2 {
 .educationContainer {
   display: flex;
   margin: 0px;
+  justify-content: center;
 
 }
 
 .educationContainer section{
   flex-direction: column;
-  margin: 4rem 10rem;
-  box-sizing: border-box;
+  margin: 4rem 5rem;
+
 align-items: center;
   justify-content: center;
   text-align: center;
@@ -129,6 +153,7 @@ align-items: center;
 
 Github {
   display: flex;
+  min-width: 102%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -152,7 +177,6 @@ Github h2 {
 }
 
 #GitHubLogo {
-  /* margin-top: 5px; */
 margin-right: 20px;
   height: 90px;
   width: 90px;
@@ -168,7 +192,6 @@ margin-right: 20px;
   text-align: center;
   margin: 10px 20px;
   padding: 10px;
-  /* border: 2px solid blue; */
   flex-direction: column;
   color: white;
   font-size: 1rem;
@@ -233,7 +256,7 @@ Contact p{
 }
 
 .otherContact {
-  
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -251,3 +274,60 @@ Contact p{
   justify-content: center;
   color: #f4623a;
 }
+
+
+
+@media (max-width:768px) {
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  #navBar{
+    width: fit-content;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 2px;
+  
+  }
+  #navBar h2{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 10px !important;
+  }
+  .navBarItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  Education{
+    margin-top: -1.5rem;
+    flex-wrap: nowrap;
+    height: fit-content;
+  }
+
+  .educationContainer {
+     display: flex;
+     flex-direction: column;
+
+}
+
+.githubContainer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  
+}
+.githubVertical{
+  width: fit-content;
+  height: fit-content;
+  padding: 30px 100px;
+}
+.githubVertical img{
+  margin: -10px -200px;
+  padding: 10px;
+}
+
+
+   }
+
