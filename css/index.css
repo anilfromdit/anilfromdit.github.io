@@ -4,33 +4,10 @@
     margin: 0px;
     padding: 0px;
     overflow-x:hidden;
+    scroll-behavior: smooth;
   }
-  /* @media (max-width:360px){
-
-    #navBar{
-      width: fit-content;
-      padding: 0px !important;
-      flex-direction: column;
-      align-items: center;
-      margin: 10px 2px;
-
-    }
-    #navBar h2{
-      width: fit-content;
-      height: fit-content;
-      margin-bottom: 10px !important;
-    }
-    .navBarItem{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-  } */
 
 /* Styling Navigation Bar*/
-
-  
-
 #navBar{
   padding: 30px;
 
@@ -41,49 +18,36 @@
 .navBarItem{
   margin-left: auto;
 }
-#mainHeading{
-  font-size: 6rem;
-   text-align: center;
-}
+
 #navBar a{
   text-decoration: none;
   margin: 0px 8px;
   color: white;
-  transition: all 400ms;
+  transition: all 1s;
 }
 #navBar a:hover{
   color: black;
   background: white;
  padding: 0px 5px;
   border-radius: 30px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 #navBar h2{
   margin: 0px;
-  transition: all 200ms;
+  padding: 5px;
+  transition: all 1s;
 }
 #navBar h2:hover{
   color: black;
   background: white;
   padding: 2px 5px;
   border-radius: 40px;
-  font-size: 1.9em;
+  font-size: 2.5em;
+  transform: rotate(360deg);
 
 }
 
-/* #navBar::before{
-  background: url("../images/background.jpg")  no-repeat ;
-  z-index: -1;
-  content:"";
-  width: 100vw;
-  height: 11vh;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-} */
-
 home {
-
   margin-top: -11vh;
   box-sizing: border-box;
   display: flex;
@@ -92,6 +56,37 @@ home {
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+home h3{
+  transition: all 1s;
+
+}
+home h3:hover{
+  padding: 15px;
+  background: white;
+  color: #f4623a;
+  font-size: 2em;
+  border-radius: 30px ;
+  transform: rotate(360deg);
+}
+#mainHeading{
+  font-size: 6rem;
+   text-align: center;
+   transition: all 1s;
+}
+
+#mainHeading:hover{
+
+  color: black;
+  background: white;
+  padding: 30px;
+  border-radius: 90px;
+  font-size: 9em;
+  
+   transform: rotate(360deg);
+
+
 }
 
 landingPage::before {
@@ -105,7 +100,9 @@ landingPage::before {
   left: 0px;
 }
 
-
+/*
+Styling Education Section 
+*/
 Education {
   margin-top: -1.3rem;
   height: 80vh;
@@ -119,10 +116,27 @@ Education {
   background: #f4623a;
   flex-wrap: wrap;
 }
+Education img{
+  transition: all 1s;
+}
+Education img:hover{
 
+  transform:rotate(360deg);
+
+}
 Education h2 {
-  margin: 15px 0px;
+  margin: 10px 0px;
   font-size: 3rem;
+  transition: all 1s;
+
+}
+Education h2:hover{
+  transform:rotate(1800deg);
+background: white;
+color: black;
+padding: 20px;
+border-radius: 30px;
+font-size: 3em;
 }
 
 .educationContainer {
@@ -155,6 +169,10 @@ align-items: center;
 
 }
 
+/*
+Styling Github Section 
+*/
+
 Github {
   display: flex;
   min-width: 102%;
@@ -184,8 +202,12 @@ Github h2 {
 margin-right: 20px;
   height: 90px;
   width: 90px;
+  transition: all 1s;
+  
 }
-
+#GitHubLogo:hover{
+  transform: scale(.5);
+}
 .githubContainer {
   display: flex;
   align-items: center;
@@ -207,6 +229,11 @@ margin-right: 20px;
   height: 200px;
   width: 200px;
   padding: 40px;
+  transition: all 1s;
+}
+
+.githubVertical img:hover{
+  transform: scale(1.5);
 }
 
 .gitPara{
@@ -214,8 +241,20 @@ margin-right: 20px;
   text-align: center;
   font-size: 1rem;
   font-family: 'Times New Roman', Times, serif;
+  transition: all 500ms;
 }
 
+.gitPara:hover{
+  font-size: 2em;
+  color: black;
+  padding: 10px;
+  background: white;
+  border-radius: 45px;
+}
+
+/*
+Styling Contact Section 
+*/
 Contact{
   display: flex;
   flex-direction: column;
@@ -275,6 +314,11 @@ Contact p{
  text-align: center;
  border: 2px solid black; 
 }
+
+/*
+Styling Footer 
+*/
+
 footer{
   background: black;
   text-align: center;
@@ -388,6 +432,19 @@ flex-direction: row;
   width: 50px;
   padding: 20px;
   margin: 0px 13%;
+}
+
+#mainHeading:hover{
+
+  color: black;
+  background: white;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 3em;
+  
+   transform: rotate(1080deg);
+
+
 }
 
    }
