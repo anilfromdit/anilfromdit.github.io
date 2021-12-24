@@ -41,6 +41,10 @@
 .navBarItem{
   margin-left: auto;
 }
+#mainHeading{
+  font-size: 6rem;
+   text-align: center;
+}
 #navBar a{
   text-decoration: none;
   margin: 0px 8px;
@@ -237,15 +241,6 @@ margin-bottom: 100px;
   color: white;
   border-radius: 25px;
 }
-.Black{
-  background-color: black;
-  margin: 0px !important;
-}
-.center{
-color: white;
-display: flex;
-justify-content: center;
-}
 Contact img {
   height: 120px;
   width: 120px;
@@ -276,8 +271,21 @@ Contact p{
 }
 
 
+Contact p{
+ text-align: center;
+ border: 2px solid black; 
+}
+footer{
+  background: black;
+  text-align: center;
+  color: white;
+}
 
 @media (max-width:768px) {
+  #mainHeading{
+    font-size: 2rem;
+     text-align: center;
+  }
   nav{
     display: flex;
     justify-content: center;
@@ -298,7 +306,10 @@ Contact p{
   .navBarItem{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: .8rem;
     align-items: center;
+    
   }
   Education{
     margin-top: -1.5rem;
@@ -328,6 +339,56 @@ Contact p{
   padding: 10px;
 }
 
+#GitHubLogo{
+  margin-right: 0px;
+  height: 45px;
+  width: 45px;
+}
+.gitHeader h2{
+  font-size: 2rem;
+  margin-top: -.1rem;
+}
+/* .githubVertical{
+  padding: 0px;
+} */
+.gitPara{
+  width: 80%;
+  margin: 0px 10%;
+  text-align: justify;
+  margin-right: 900px;
+
+}
+
+.contactForm{
+  font-size: 1rem;
+}
+.submitButton{
+  margin: 10px 35%;
+}
+
+Contact p{
+  text-align: center;
+  font-size: 1rem;
+  border: 2px solid black; 
+ }
+
+.otherContact{
+  display: flex;
+flex-direction: row;
+
+}
+.otherContact a{
+  font-size: 1rem;
+  margin-top: -25px;
+  margin-left: 20px;
+
+}
+.contactVertical img {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  margin: 0px 13%;
+}
 
    }
 
