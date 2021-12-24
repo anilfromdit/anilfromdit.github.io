@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anil Gulati</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+  
+</style>
+
+<body>
+  <landingPage>
+    <nav>
+      <div id="navBar">
+        <h2>Anil Gulati</h2>
+        <ul class="navBarItem">
+          <a href="#Home">Home</a>
+          <a href="#Education">Education</a>
+          <a href="#Github">Github</a>
+          <a href="#Contact">Contact</a>
+          <a href="resume/resume.pdf">Resume</a>
+        </ul>
+      </div>
+    </nav>
+    <home>
+      <h1 style="font-size: 4rem">Anil Gulati</h1>
+      <h3>
+        Programmer|Tea Lover| Reader
+      </h3>
+
+    </home>
+  </landingPage>
+
+  <Education id="Education">
+    <h2>
+      Education
+    </h2>
+    <hr id="cHr">
+
+    <div class="educationContainer">
+
+      <section class="vertical">
+        <img src="images/degree.png">
+        <h3>Degree</h3>
+        Bachelor of Science in Computer Science from
+        <a href="https://dituniversity.edu.in/" target="_blank">DIT University</a>
+
+      </section>
+      <section class="vertical">
+        <img src="images/code.png">
+        <h3>Languages</h3>
+        Python, C#, Java, JavaScript, C / C++, HTML5 (HTML/CSS/JS)
+      </section>
+      <section class="vertical">
+        <img src="images/skills.png">
+        <h3>Skills</h3>
+        Android App Development(JAVA), Front End (HTML/CSS/JS)
+      </section>
+
+    </div>
+
+  </Education>
+
+  <Github id="Github">
+    <div class="gitHeader">
+    <img src="images/github.png" id="GitHubLogo">
+    <a href="https://github.com/anilfromdit">
+      <h2>
+        @anilfromdit
+      </h2>
+    </a>
+  </div>
+    <hr id="cHr">
+
+    <div class="githubContainer">
+
+      <section class="githubVertical">
+        <a href="https://github.com/anilfromdit/library_management_program">
+          <img src="/images/library.png">
+          <h3>
+            Library Management Program
+          </h3>
+        </a>
+        <p class="gitPara">
+          <strong>Library Management Program</strong> is a command line based software built to handle the primary
+          housekeeping functions of a library.
+          Libraries rely on library management systems to manage asset collections as well as relationships with their
+          members.
+        </p>
+
+      </section>
+
+      <section class="githubVertical">
+        <a href="https://drive.google.com/drive/u/0/folders/1Nd0BWlw3e2F5bB64rqKSve_1G3bIJA25">
+          <img src="/images/MMP.png">
+          <h3>
+            Mark Me Present
+          </h3>
+        </a>
+        <p class="gitPara">
+          <strong>Mark Me Present</strong> is an android application built using java to automate the task of taking
+          attendance in colleges.
+          This app uses QR codes or ID and passwords to take attendance. QR code is highly secure and also eliminates
+          chances
+          of proxy even if someone tries it directly get reported to concerned faculty.
+
+        </p>
+      </section>
+
+      <section class="githubVertical">
+        <a href="">
+          <img src="/images/WEDO.png">
+          <h3>
+            WE DO
+          </h3>
+        </a>
+        <p class="gitPara">
+          <strong>WE DO</strong> is an android application built to eliminate the frauds on social media or dating app.
+          It works as the user needs to register on this app and submit govt. issued id to get a verification tick on
+          their profile, which later works as central database for all other app user.
+          Also this app supports making friends and chatting like any other social media app.
+        </p>
+      </section>
+
+    </div>
+  </Github>
+
+  <Contact id="Contact">
+    <h3>Contact Anil</h3>
+    <div class="contactContainer">
+      <form action="https://formspree.io/f/mknywzrd" method="POST" role="form">
+        <!-- Need a name, reply to email, and a message -->
+
+        <input type="text" name="name" placeholder="Your Name" class="contactForm" required>
+        <input type="email" name="email" placeholder="Your Email" class="contactForm" required>
+        <textarea name="message" placeholder="Your message" class="contactForm" required></textarea>
+        <input type="submit" value="Email Anil" class="submitButton">
+
+      </form>
+    </div>
+    <p>
+      Or You can reach out to me via:
+    </p>
+    <div class="otherContact">
+      <div class="contactVertical">
+        <img src="images/email.png">
+        <a href="mailto:anilfromdit@gmail.com" target="_blank">Email</a>
+      </div>
+      <div class="contactVertical">
+        <img src="images/github.png">
+        <a href="https://github.com/anilfromdit" target="_blank">Github</a>
+      </div>
+      <div class="contactVertical">
+        <img src="images/linkedin.png">
+        <a href="https://linkedin.com/in/anilfromdit" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </Contact>
+  <p class="Black center">
+    Anil Gulati &copy; 2021 - <span id="copyright-year"></span>. All rights reserved.
+  </p>
+  <script>
+    document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
