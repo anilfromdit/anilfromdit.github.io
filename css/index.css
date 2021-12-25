@@ -32,18 +32,17 @@
   border-radius: 30px;
   font-size: 2em;
 }
-#navBar h2{
+#mNH h2{
   margin: 0px;
   padding: 5px;
   transition: all 1s;
 }
-#navBar h2:hover{
+#mNH h2:hover{
   color: black;
   background: white;
   padding: 2px 5px;
   border-radius: 40px;
   font-size: 2.5em;
-  transform: rotate(360deg);
 
 }
 
@@ -68,28 +67,31 @@ home h3:hover{
   color: #f4623a;
   font-size: 2em;
   border-radius: 30px ;
-  transform: rotate(360deg);
+  transform: scale(1.5);
 }
 #mainHeading{
   font-size: 6rem;
    text-align: center;
-   transition: all 1s;
-}
-
-#mainHeading:hover{
-
-  color: black;
-  background: white;
-  padding: 30px;
-  border-radius: 90px;
-  font-size: 9em;
   
-   transform: rotate(360deg);
-
-
+   animation-name: myAnimation;
+   animation-iteration-count: infinite;
+   animation-duration: 3s;
+   overflow: hidden;
+}
+@keyframes myAnimation {
+  from{
+    color: #808080;
+  }to{
+    color: white; 
+    /* color: rgba(0, 0, 0, 0) radial-gradient( #23966c, #faaa54, #e23b4a, #db0768, #360670) repeat scroll 0 0; */
+    
+    text-shadow: 1px 1px 0 #1371a0, 2px -5px 0 #04161f, -1px -1px 0 #04161f, -1px 1px 0 #04161f;
+    
+   }
+  
 }
 
-landingPage::before {
+body::before {
   background: url("../images/background.jpg") no-repeat;
   z-index: -1;
   content: "";
@@ -131,7 +133,9 @@ Education h2 {
 
 }
 Education h2:hover{
-  transform:rotate(1800deg);
+  transform:scale(1.5);
+  margin: 40px;
+  box-sizing: border-box;
 background: white;
 color: black;
 padding: 20px;
@@ -347,6 +351,31 @@ footer{
     height: fit-content;
     margin-bottom: 10px !important;
   }
+  #mNH h2{
+    transition: all 500ms;
+  }
+  #mNH h2:hover{
+    color: black;
+    margin-top: 10px;
+    background: white;
+    padding: 2px 5px;
+    border-radius: 30px;
+    font-size: 1em;
+  
+  }
+
+  home h3{
+    transition: all 500ms;
+  
+  }
+  home h3:hover{
+    padding: 5px 5px;
+    background: white;
+    font-size: .7rem;
+    color: #f4623a;
+    border-radius: 10px ;
+  }
+
   .navBarItem{
     display: flex;
     flex-direction: row;
@@ -360,6 +389,17 @@ footer{
     flex-wrap: nowrap;
     height: fit-content;
   }
+
+  Education h2:hover{
+    transform:scale(1.1);
+    margin: 40px;
+    box-sizing: border-box;
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 30px;
+  }
+  
 
   .educationContainer {
      display: flex;
@@ -432,19 +472,6 @@ flex-direction: row;
   width: 50px;
   padding: 20px;
   margin: 0px 13%;
-}
-
-#mainHeading:hover{
-
-  color: black;
-  background: white;
-  padding: 5px;
-  border-radius: 50px;
-  font-size: 3em;
-  
-   transform: rotate(1080deg);
-
-
 }
 
    }
