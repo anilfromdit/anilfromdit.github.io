@@ -72,7 +72,8 @@ home h3:hover{
 #mainHeading{
   font-size: 6rem;
    text-align: center;
-  
+  border-radius: 25px;
+  padding: 2px;
    animation-name: myAnimation;
    animation-iteration-count: infinite;
    animation-duration: 3s;
@@ -92,7 +93,10 @@ home h3:hover{
 }
 
 body::before {
-  background: url("../images/background.jpg") no-repeat;
+  /* background: url("../images/background.jpg") no-repeat; */
+  color: #013A6B;
+   background: -webkit-linear-gradient(-30deg, #013A6B 50%, #004E95 50%);
+   
   z-index: -1;
   content: "";
   width: 100vw;
