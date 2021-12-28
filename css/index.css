@@ -36,13 +36,14 @@
   margin: 0px;
   padding: 5px;
   transition: all 1s;
+  color:black;
 }
 #mNH h2:hover{
-  color: black;
-  background: white;
+  background: black;
+  color: white;
   padding: 2px 5px;
   border-radius: 40px;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 
 }
 
@@ -59,14 +60,15 @@ home {
 
 home h3{
   transition: all 1s;
+  color: #f4623a;
 
 }
 home h3:hover{
-  padding: 15px;
-  background: white;
-  color: #f4623a;
-  font-size: 2em;
-  border-radius: 30px ;
+  padding: 10px 15px;
+  color: black;
+  background: -webkit-linear-gradient(-30deg, #f4623a 50%, #FFF 50%);
+  border: 2px solid gray;
+  border-radius: 15px ;
   transform: scale(1.5);
 }
 #mainHeading{
@@ -74,31 +76,20 @@ home h3:hover{
    text-align: center;
   border-radius: 25px;
   padding: 2px;
-   animation-name: myAnimation;
-   animation-iteration-count: infinite;
-   animation-duration: 3s;
-   overflow: hidden;
-}
-@keyframes myAnimation {
-  from{
-    color: #808080;
-  }to{
-    color: white; 
-    /* color: rgba(0, 0, 0, 0) radial-gradient( #23966c, #faaa54, #e23b4a, #db0768, #360670) repeat scroll 0 0; */
-    
-    text-shadow: 1px 1px 0 #1371a0, 2px -5px 0 #04161f, -1px -1px 0 #04161f, -1px 1px 0 #04161f;
-    
-   }
-  
+  word-spacing: 20px;
+  margin-left: 24px;
+  background:-webkit-linear-gradient(-30deg,#000 29%, #FFF 54%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body::before {
   /* background: url("../images/background.jpg") no-repeat; */
-  color: #013A6B;
-   background: -webkit-linear-gradient(-30deg, #013A6B 50%, #004E95 50%);
-   
+  /* color: #013A6B; */
+  background: -webkit-linear-gradient(-30deg, #FFF 50%, #000 50%);
   z-index: -1;
   content: "";
+  opacity: .95;
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -350,6 +341,9 @@ footer{
     margin: 10px 2px;
   
   }
+  #navBar a{
+    color: black;
+  }
   #navBar h2{
     width: fit-content;
     height: fit-content;
@@ -374,10 +368,11 @@ footer{
   }
   home h3:hover{
     padding: 5px 5px;
-    background: white;
     font-size: .7rem;
-    color: #f4623a;
     border-radius: 10px ;
+    color: black;
+    background: -webkit-linear-gradient(-30deg, #f4623a 50%, #FFF 50%);
+  
   }
 
   .navBarItem{
