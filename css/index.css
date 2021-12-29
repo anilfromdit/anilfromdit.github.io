@@ -85,8 +85,6 @@ home h3:hover{
 }
 
 body::before {
-  /* background: url("../images/background.jpg") no-repeat; */
-  /* color: #013A6B; */
   background: -webkit-linear-gradient(-30deg, #FFF 50%, #000 50%);
   z-index: -1;
   content: "";
@@ -380,7 +378,6 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* font-size: .8rem; */
     align-items: center;
     
   }
@@ -432,9 +429,6 @@ footer{
   font-size: 2rem;
   margin-top: -.1rem;
 }
-/* .githubVertical{
-  padding: 0px;
-} */
 .gitPara{
   width: 80%;
   margin: 0px 10%;
