@@ -103,7 +103,7 @@ Styling Education Section
 */
 Education {
   margin-top: -1.3rem;
-  height: 80vh;
+  height: 95vh;
   min-width: 100%;
   width: 100vw;
   display: flex ;
@@ -111,7 +111,7 @@ Education {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  background: #f4623a;
+  background: -webkit-linear-gradient(31deg, #f4623a 50%, #FFF 50%);
   flex-wrap: wrap;
 }
 Education img{
@@ -129,14 +129,13 @@ Education h2 {
 
 }
 Education h2:hover{
-  transform:scale(1.5);
-  margin: 40px;
+  transform:scale(1.2);
+  margin: 20px;
   box-sizing: border-box;
-background: white;
+background: -webkit-linear-gradient(35.5deg, #FFF 50%, #f4623a 50%);
 color: black;
-padding: 20px;
+padding: 10px;
 border-radius: 30px;
-font-size: 3em;
 }
 
 .educationContainer {
@@ -156,7 +155,7 @@ align-items: center;
   
 }
 .vertical h3{
-  color: white;
+  color: black;
   font-size: 2rem;
 }
 
@@ -175,12 +174,13 @@ Styling Github Section
 
 Github {
   display: flex;
-  min-width: 102%;
+  min-width: 100%;
+  min-height: 95vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: black;
-  background: #808088;
+  background: -webkit-linear-gradient(-32deg, #FFF 50%, #808080 50%);
   font-size: 2rem;
 
 }
@@ -219,7 +219,7 @@ margin-right: 20px;
   margin: 10px 20px;
   padding: 10px;
   flex-direction: column;
-  color: white;
+  color: black;
   font-size: 1rem;
   max-width: 26%;
   min-width: 26%;
@@ -392,9 +392,9 @@ footer{
 
   Education h2:hover{
     transform:scale(1.1);
-    margin: 40px;
+    margin: 20px;
     box-sizing: border-box;
-  background: white;
+    background:-webkit-linear-gradient(-30deg,#f4623a 29%, #FFF 54%);
   color: black;
   padding: 20px;
   border-radius: 30px;
