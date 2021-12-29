@@ -23,6 +23,7 @@
   text-decoration: none;
   margin: 0px 8px;
   color: white;
+  
   transition: all 1s;
 }
 #navBar a:hover{
@@ -379,7 +380,7 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-size: .8rem;
+    /* font-size: .8rem; */
     align-items: center;
     
   }
@@ -475,3 +476,24 @@ flex-direction: row;
 
    }
 
+   
+@media (max-width:390px) {
+  #navBar ul a{
+ font-size: .6rem;
+  }
+  home h3{
+    font-size: 1rem;
+  }
+}
+   
+
+@media (max-width:1140px) {
+  #navBar ul{
+    
+  flex-wrap: wrap; 
+  }
+  #navBar ul a{
+   
+    color: #f4623a;
+  }
+}
