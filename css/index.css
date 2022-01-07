@@ -36,7 +36,7 @@
 #mNH h2{
   margin: 0px;
   padding: 5px;
-  transition: all 1s;
+  transition: all 2s;
   color:black;
 }
 #mNH h2:hover{
@@ -44,7 +44,7 @@
   color: white;
   padding: 2px 5px;
   border-radius: 40px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 
 }
 
@@ -60,24 +60,56 @@ home {
 }
 
 home h3{
-  transition: all 1s;
+  /* transition: all .s; */
+  padding:   15px;
   color: #f4623a;
+  position: relative;
+}
 
+#sub::before{
+  height: 100%;
+  left: -20%;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  content:"";
+  width: 0;
 }
-home h3:hover{
-  padding: 10px 15px;
-  color: black;
-  background: -webkit-linear-gradient(-30deg, #f4623a 50%, #FFF 50%);
-  border: 2px solid gray;
-  border-radius: 15px ;
-  transform: scale(1.5);
+
+#sub:hover{
+  border-radius: 25px;
+  color: white;
 }
+
+#sub:hover:before{
+  
+  height: 100%;
+  content: "";
+  animation: h3Animation 2.5s 1 forwards;
+   width: 60%;
+}
+
+@keyframes h3Animation {
+  from{
+
+  }to{
+    transform: skew(50deg) ;
+    transform-origin: top right;
+    background:  #f4623a; 
+  
+    overflow: hidden;
+  }
+  
+}
+
+
 #mainHeading{
   font-size: 6rem;
    text-align: center;
   border-radius: 25px;
   padding: 2px;
   word-spacing: 20px;
+  position: relative;
   margin-left: 24px;
   background:-webkit-linear-gradient(-30deg,#000 29%, #FFF 54%);
   -webkit-background-clip: text;
@@ -95,6 +127,8 @@ body::before {
   top: 0px;
   left: 0px;
 }
+
+
 
 /*
 Styling Education Section 
@@ -121,7 +155,7 @@ Education img:hover{
 
 }
 Education h2 {
-  margin: 10px 0px;
+  margin: -60px 0 15px 0;
   font-size: 3rem;
   transition: all 1s;
 
