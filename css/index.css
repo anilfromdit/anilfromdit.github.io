@@ -154,25 +154,56 @@ Education img:hover{
   transform:rotate(360deg);
 
 }
-Education h2 {
-  margin: -60px 0 15px 0;
+#eduTitle {
+  margin: -100px 0 15px 0;
   font-size: 3rem;
-  transition: all 1s;
+  position: relative;
 
 }
-Education h2:hover{
-  transform:scale(1.2);
-  margin: 20px;
-  box-sizing: border-box;
-background: -webkit-linear-gradient(35.5deg, #FFF 50%, #f4623a 50%);
-color: black;
+
+#eduTitle:hover{
+  transform:scale(1);
 padding: 10px;
-border-radius: 30px;
+border-radius: 25px;
+box-sizing: border-box;
+border: 2px solid black;
 }
+#eduTitle::before{
+  height: 100%;
+  right: -20%;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  content:"";
+  width: 0;
+}
+
+
+
+#eduTitle:hover:before{
+  
+  height: 100%;
+  content: "";
+  animation: eduAnimation 2.5s 1 forwards;
+  width: 70%;
+}
+@keyframes eduAnimation {
+  from{
+
+  }to{
+    transform: skew(50deg) ;
+    transform-origin: right;
+    background:  #f4623a; 
+    overflow: hidden;
+  }
+  
+}
+
+
 
 .educationContainer {
   display: flex;
-  margin: 0px;
+  margin: 20px 0;
   justify-content: center;
 
 }
@@ -372,7 +403,7 @@ footer{
     flex-direction: column;
     align-items: center;
     margin: 10px 2px;
-  
+    
   }
   #navBar a{
     color: black;
@@ -392,21 +423,21 @@ footer{
     padding: 2px 5px;
     border-radius: 30px;
     font-size: 1em;
-  
+    
   }
-
+  
   home h3{
     transition: all 500ms;
-  
+    
   }
-  home h3:hover{
+  /* home h3:hover{
     padding: 5px 5px;
     font-size: .7rem;
     border-radius: 10px ;
     color: black;
     background: -webkit-linear-gradient(-30deg, #f4623a 50%, #FFF 50%);
-  
-  }
+    
+  } */
 
   .navBarItem{
     display: flex;
@@ -420,8 +451,11 @@ footer{
     flex-wrap: nowrap;
     height: fit-content;
   }
+#eduTitle{
+  margin-top: 5%;
+}
 
-  Education h2:hover{
+  /* #eduTitle:hover{
     transform:scale(1.1);
     margin: 20px;
     box-sizing: border-box;
@@ -429,8 +463,8 @@ footer{
   color: black;
   padding: 20px;
   border-radius: 30px;
-  }
-  
+  } */
+
 
   .educationContainer {
      display: flex;
